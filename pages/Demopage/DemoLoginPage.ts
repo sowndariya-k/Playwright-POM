@@ -22,14 +22,10 @@ export class DemoLoginPage {
     }
 
     async login(username: string, password: string) {
-
     await this.loginLink.click();
-
     await this.username.waitFor({ state: 'visible' });
-
     await this.username.fill(username);
     await this.password.fill(password);
-
     await this.loginButton.click();
 }
 }
